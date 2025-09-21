@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Mario Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="game-wrapper">
+        <canvas id="game" width="960" height="540" aria-label="Super Mini Mario level"></canvas>
+        <div class="overlay" id="overlay">
+          <h1 id="title">Super Mini Mario</h1>
+          <p id="message">Use the arrow keys to run and jump. Reach the flag to win!</p>
+          <p id="prompt">Press <strong>Space</strong> to start.</p>
+        </div>
+      </section>
+      <aside class="info">
+        <h2>Controls</h2>
+        <ul>
+          <li><kbd>←</kbd> / <kbd>→</kbd> &mdash; Move</li>
+          <li><kbd>↑</kbd> or <kbd>Space</kbd> &mdash; Jump</li>
+        </ul>
+        <p class="note">Collect coins, stomp Goombas, and reach the goal pole.</p>
+      </aside>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
